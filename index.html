@@ -1,6 +1,21 @@
 <!doctype html>
-
+ <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <head>
+	<script type="text/javascript">
+ 	$(document).ready(function(){
+      	$('#test-area').mouseout(function(){
+           	$('#mycursor').hide();
+           	return >false;
+      	});
+      	$('#test-area').mouseenter(function(){
+           	$('#mycursor').show();
+           	return >false;
+      	});
+      	$('#test-area').mousemove(function(e){
+           	$('#mycursor').css('left', e.clientX - 20).css('top', e.clientY + 7);
+      	});
+});
+</script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Mcpeleebs Zone</title>

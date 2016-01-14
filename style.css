@@ -29,7 +29,25 @@ body {cursor: url('img/Diamond.cur');}
 ::-moz-selection { background: #526E21; color: #FFF; text-shadow: none; }
 ::-webkit-selection { background: #526E21; color: #FFF; text-shadow: none; }
 ::selection { background: #526E21; color: #FFF; text-shadow: none; }
+#test-area {
+ 	height: 200px;
+ 	border: 3px dashed #CCCCCC;
+ 	background: #FFFFFF;
+ 	padding: 20px;
+ 	cursor: url(img/Diamond.cur), none;
+}
 
+#mycursor {
+ 	cursor: none;
+ 	width: 97px;
+ 	height: 137px;
+ 	background: url("img/Diamond_Sword.png") no-repeat left top;
+ 	position: absolute;
+ 	display: none;
+ 	top: 0;
+ 	left: 0;
+ 	z-index: 10000;
+}
 a { color: #00e; }
 a:visited { color: #551a8b; }
 a:hover { color: #06e; }
